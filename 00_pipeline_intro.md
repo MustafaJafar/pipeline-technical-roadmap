@@ -17,7 +17,8 @@ In My opinion these points makes a successfull pipeline technical
 
 ## P.S. 
 
-     pipeline tools save a lot of headaches on artists as they won't need to remember a lot of logical steps that don't relate to their art creation process.
+     pipeline tools save a lot of headaches on artists as they won't need to remember a lot of logical steps 
+     that don't relate to their art creation process.
 
 ---
 
