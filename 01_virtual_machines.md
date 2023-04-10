@@ -179,10 +179,9 @@ By the end of these steps, you should be able to mimic the basic structure of a 
      These machines are controlled and monitored via **Farm Managment Tool**.<br><br>
 
 ---
-<br>
 
->### My Setup:
->Due to my hardware limitation: <br>
+### My Setup:
+Due to my hardware limitation: <br>
    &emsp; I rely on  <br>
    &emsp;&emsp; ● 1 Pipeline Machine <br>
    &emsp;&emsp; ● 3 Storage Machines <br>
@@ -199,17 +198,17 @@ By the end of these steps, you should be able to mimic the basic structure of a 
    <br>
    &emsp;VM Machines Specs : <br>
    &emsp;&emsp;3 GB ram for each core <br>
-      <br>
+   <br>
    &emsp;&emsp;Pipeline Machine : <br>
    &emsp;&emsp;&emsp;processor : 1 core <br>
    &emsp;&emsp;&emsp;Ram : 2GB <br>
    &emsp;&emsp;&emsp;Storage up to : 50 GB <br>
-      <br>
+   <br>
    &emsp;&emsp;Each Storage Machine : <br>
    &emsp;&emsp;&emsp;processor : 1 core <br>
    &emsp;&emsp;&emsp;Ram : 2GB <br>
    &emsp;&emsp;&emsp;Storage up to : 150 GB <br>
-      <br>
+   <br>
    &emsp;&emsp;Each User / Farm Machine : <br>
    &emsp;&emsp;&emsp;processor : 2 core <br>
    &emsp;&emsp;&emsp;Ram : 6GB <br>
