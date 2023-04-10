@@ -12,7 +12,7 @@ the one who gives directions about how to do things and suggests new workflows.
 In My opinion these points make a successfull pipeline technical
 1. Engineering Mindset [Fundamentals - Technical Skills] <br>
 2. Engineering Practices and Principles [ Establish Goals - Create a Motivational Environment - Plan and Execute - ... ] <br>
-3. DevOps [Team Management - Repo Management - Dev Process Management ] <br>
+3. DevOps [Dev / TDs Team Management - Repo Management - Dev Process Management ] <br>
 4. Pipeline Technical [DCCs APIs - Farm Management - Pipeline Tools/Automation - Flexibile Pipeline over local and remote networks  ] <br>
 
 ## P.S. 
