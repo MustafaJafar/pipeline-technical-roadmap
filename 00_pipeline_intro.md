@@ -9,7 +9,7 @@ the one who gives directions about how to do things and suggests new workflows.
 ---
 
 ## Skills and Responsibilities
-In My opinion these points makes a successfull pipeline technical
+In My opinion these points make a successfull pipeline technical
 1. Engineering Mindset [Fundamentals - Technical Skills] <br>
 2. Engineering Practices and Principles [ Establish Goals - Create a Motivational Environment - Plan and Execute - ... ] <br>
 3. DevOps [Team Management - Repo Management - Dev Process Management ] <br>
