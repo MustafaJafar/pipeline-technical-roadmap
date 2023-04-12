@@ -8,7 +8,7 @@ In my experiment, I'm going to test
 
 At this point I had setup : 
 - Virtually connected virtual machines
-- Storage that is sharable across network
+- Storage that is sharable across virtual network
  
     ```
     \\storage\repo
