@@ -29,5 +29,26 @@ go to: https://zou.cg-wire.com/
 <br>
 
 My setup : <br>
-pipline machine 1 runs `kitsu` for `openpype` projects <br>
-pipline machine 2 runs `kitsu` for `prism` projects <br>
+pipline-pype machine runs `kitsu` for `openpype` projects <br>
+pipline-prism machine runs `kitsu` for `prism` projects <br>
+
+---
+
+### OpenPype Installation : 
+Firstly, Setup MongoDB on pipeline-pype machine as follows: [How to Install MongoDB 6 on Ubuntu 22.04](https://www.youtube.com/watch?v=rdCk3YzW5os)
+
+
+For user Machines : <br>
+- Download win installer from the latset release [OpenPype releases](https://github.com/ynput/OpenPype/releases)
+- Add Monogo URL in OpenPype settings 
+
+<br>
+
+Connect `Kitsu` to `OpenPype` : 
+- Activate `Kitsu` module in Admin Settings and add `kitsu`'s URL
+
+> This step is done once as it will be save in the databas.
+
+
+---
+
