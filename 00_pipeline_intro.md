@@ -23,13 +23,13 @@ In My opinion these points make a successfull pipeline technical
 ---
 
 ### Pipeline Tools work on two levels :
-- On OS Level to manage the interactions among DCC apps <br> 
+- On OS Level to manage interactions among DCC apps <br> 
 e.g. save scene files , import assets , export assets 
 
           Note :
           a. Assets Naming Conventions are set explicitly by supervisors and pipeline technical.
           b. Scene files and assets export names can be set by pipeline tool automatically based on asset name.
-- On DCC apps level which manages their inner components <br>
+- On DCC apps level which manage their inner components <br>
   e.g. Naming conventions for materials, 3d models and Rigs <br>
   e.g. Naming conventions for read and write nodes <br>
   e.g. Detect and fix common problems <br>
@@ -43,7 +43,7 @@ e.g. save scene files , import assets , export assets
      > To mimic the basic structure of a studio's network. <br>
 
 - Production Tools Vs Pipeline Tools :
-     > Kitsu, AYON and PRISM2.0  <br>
+     > Setup Kitsu, AYON and PRISM2.0  <br>
        
 - USD Workflow and Mateial X 
   

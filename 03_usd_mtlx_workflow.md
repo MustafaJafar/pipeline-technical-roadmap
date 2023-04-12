@@ -1,1 +1,0 @@
-usd and material x
