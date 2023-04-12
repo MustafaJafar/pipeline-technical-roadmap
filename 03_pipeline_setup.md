@@ -47,7 +47,7 @@ For user Machines : <br>
 Connect `Kitsu` to `OpenPype` : 
 - Activate `Kitsu` module in Admin Settings and add `kitsu`'s URL
 
-> This step is done once as it will be save in the databas.
+> This step is done once as it will be saved in the databas.
 
 
 ---
