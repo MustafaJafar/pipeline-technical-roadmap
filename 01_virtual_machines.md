@@ -118,15 +118,15 @@ Two options :
 
 <br>
 
-![Test LocalNet and Intert Access](assets\virtual_machines_01.jpg)*<center>Test LocalNet and Intert Access</center>*
+![Test LocalNet and Intert Access](resources\virtual_machines_01.jpg)*<center>Test LocalNet and Intert Access</center>*
 
 <br>
 
-![Shared Config Folder](assets\virtual_machines_02.jpg)*<center>Shared Config Folder</center>*
+![Shared Config Folder](resources\virtual_machines_02.jpg)*<center>Shared Config Folder</center>*
 
 <br>
 
-![Shared Folders over network](assets\virtual_machines_03.jpg)*<center>Shared Folders over network<br>for Guests, Change Machine Name</center>*
+![Shared Folders over network](resources\virtual_machines_03.jpg)*<center>Shared Folders over network<br>for Guests, Change Machine Name</center>*
 
 <br>
 
@@ -154,8 +154,8 @@ By the end of these steps, you should be able to mimic the basic structure of a 
      In my scenario it's used for :
       - run studio production tool server *e.g. ftrack or kitsu*
       - run and store studio's database *e.g. Mongo DB for openpype*
-      - store and share studio configuration folder as `\\config`
-      - store and share studio repository [Tools, Scripts , HDAs, ... ] as `\\repo` <br>
+      - store and share studio configuration folder as `\\pipeline\configs`
+      - store and share studio repository [Tools, Scripts , HDAs, ... ] as `\\pipeline\repo` <br>
        Example Tools :
         - pipeline management tool 
         - farm managment tool
@@ -179,22 +179,36 @@ By the end of these steps, you should be able to mimic the basic structure of a 
      These machines are controlled and monitored via **Farm Managment Tool**.<br><br>
 
 ---
+### Basic Studio Setup : 
 
+For a studio that 
+   - uses `kitsu` for production management
+   - uses both `OpenPype` and `Prism 2.0` for pipeline management
+
+
+
+Machines : 
+  - 2 Pipeline Machine <br>
+  - N Storage Machines for N departments <br>
+  - M User Machines for M users <br>
+  - K Farm Machines <br>
+
+---
 ### My Setup:
 Due to my hardware limitation: <br>
-   &emsp; I rely on  <br>
-   &emsp;&emsp; ● 1 Pipeline Machine <br>
-   &emsp;&emsp; ● 3 Storage Machines <br>
-   &emsp;&emsp; ● 1 User Machine <br>
+   &emsp; I use  <br>
+   &emsp;&emsp; ● 2 Pipeline Machine 1 at a time<br>
+   &emsp;&emsp; ● 1 Storage Machines <br>
+   &emsp;&emsp; ● 2 User Machine 1 at a time<br>
    &emsp;&emsp; ● 1 Farm Machine *as well as limiting tasks complexity.* <br>
    <br>
-   &emsp;Total Resources : 8 Cores + 24 Ram + 800 GB available storage<br>
+   &emsp;Total available Resources : 8 Cores + 24 Ram + 800 GB available storage<br>
    <br>
    &emsp;My PC Specs : <br>
    &emsp;&emsp;Processor : Ryzen 5900x 12 core <br>
-   &emsp;&emsp;Ram : 64 GB <br>
-   &emsp;&emsp;Storage : samsung 980 pro 1T <br>
-   &emsp;&emsp;Graphics Card : Nvidia 3060 <br>
+   &emsp;&emsp;Ram : 32 GB <br>
+   &emsp;&emsp;seperate Storage for VMs : samsung 980 pro 1T <br>
+   &emsp;&emsp;Graphics Card : Nvidia RTX 3060 <br>
    <br>
    &emsp;VM Machines Specs : <br>
    &emsp;&emsp;3 GB ram for each core <br>
@@ -204,13 +218,13 @@ Due to my hardware limitation: <br>
    &emsp;&emsp;&emsp;Ram : 2GB <br>
    &emsp;&emsp;&emsp;Storage up to : 50 GB <br>
    <br>
-   &emsp;&emsp;Each Storage Machine : <br>
-   &emsp;&emsp;&emsp;processor : 1 core <br>
+   &emsp;&emsp;Storage Machine : <br>
+   &emsp;&emsp;&emsp;processor : 2 core <br>
    &emsp;&emsp;&emsp;Ram : 2GB <br>
-   &emsp;&emsp;&emsp;Storage up to : 150 GB <br>
+   &emsp;&emsp;&emsp;Storage up to : 200 GB <br>
    <br>
    &emsp;&emsp;Each User / Farm Machine : <br>
-   &emsp;&emsp;&emsp;processor : 2 core <br>
+   &emsp;&emsp;&emsp;processor : 3 core <br>
    &emsp;&emsp;&emsp;Ram : 6GB <br>
    &emsp;&emsp;&emsp;Storage up to : 150 GB <br>
 
