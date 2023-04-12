@@ -1,6 +1,6 @@
 # DCC apps and APIs
 
-Any app that we use to create a digital art / content `e.g.3d models`  is called Digial Content Creation app `DCC app`
+Any app that we use to create a digital art / content `e.g. 3d models`  is called a Digital Content Creation app `DCC app`
 
 ---
 
@@ -38,7 +38,7 @@ Houdini API :
 
 <br>
 
-After Effects : 
+After Effects API : 
 - [After Effects Scripting Guide](https://ae-scripting.docsforadobe.dev/)
 - [@NTProductions](https://www.youtube.com/@NTProductions)
 
