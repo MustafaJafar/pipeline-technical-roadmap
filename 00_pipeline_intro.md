@@ -39,6 +39,8 @@ e.g. save scene files , import assets , export assets
 
 ---
 ## Plan :
+- Learn DCC apps APIs
+     > How to use code to interact with DCC apps
 - Virtual Machines : <br>
      > To mimic the basic structure of a studio's network. <br>
 
