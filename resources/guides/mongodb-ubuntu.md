@@ -77,5 +77,5 @@ It's better to set a `static ip address` for your mongo machine from :
 P.S. <br>
 &emsp;If machine fails to connect to Internet, you may turn off `Automatic DNS` and set one like Google's own DNS server.
 
-![Shared Config Folder](..\images\mongodb-ubuntu_01.jpg)
+![Shared Config Folder](../images/mongodb-ubuntu_01.jpg)
 
