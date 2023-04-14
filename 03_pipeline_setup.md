@@ -24,18 +24,19 @@ At this point I had setup :
 
 ### Setup Kitsu : 
 It needs someone who's familiar with linux. <br>
-go to: https://zou.cg-wire.com/
+[Deploy kitsu for production guide](resources/guides/kitsu-deploy.md)
 
 <br>
 
 My setup : <br>
-pipline-pype machine runs `kitsu` for `openpype` projects <br>
-pipline-prism machine runs `kitsu` for `prism` projects <br>
+`pipline-pype machine` runs `kitsu` for `openpype` projects <br>
+`pipline-prism machine` runs `kitsu` for `prism` projects <br>
 
 ---
 
 ### OpenPype Installation : 
-Firstly, Setup MongoDB on pipeline-pype machine as follows: [How to Install MongoDB 6 on Ubuntu 22.04](https://www.youtube.com/watch?v=rdCk3YzW5os)
+Firstly, Install MongoDB, I choose to install it on `pipline-pype machine` <br>
+[Install MongoDB 6 Community guide](resources/guides/mongodb-ubuntu.md)
 
 
 For user Machines : <br>
