@@ -20,12 +20,13 @@ This doc is a summary of
     sudo apt-get install wget curl gnupg2 software-properties-common apt-transport-https ca-certificates lsb-release software-properties-common apt-transport-https ca-certificates lsb-release -y
 
 ## Import the public key
+This step should return `OK` 
 
     curl -fsSL https://pgp.mongodb.com/server-6.0.asc | \
     sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg \
     --dearmor
 
-> Try this instead if it didin't work 
+> If it didin't return anything, Try this instead 
 
     wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -    
 
@@ -41,7 +42,7 @@ This is a system specific command, check [mongodb docs](https://www.mongodb.com/
 
 ## Install the MongoDB packages
 
-    sudo apt-get install -y mongodb-org
+    sudo apt-get install mongodb-org -y
 
 ## Test installation 
 

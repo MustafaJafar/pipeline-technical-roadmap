@@ -114,7 +114,7 @@ Add to the end of the file:
 
     sudo nano /etc/zou/gunicorn.conf
 
-Add to the end of the file: 
+Add these: 
 
     accesslog = "/opt/zou/logs/gunicorn_access.log"
     errorlog = "/opt/zou/logs/gunicorn_error.log"
@@ -190,7 +190,7 @@ add these :
 
 ## Configure Nginx
 
-sudo nano /etc/nginx/sites-available/zou
+    sudo nano /etc/nginx/sites-available/zou
 
 Add these:
 
