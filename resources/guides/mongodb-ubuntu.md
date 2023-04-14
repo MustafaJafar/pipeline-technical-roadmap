@@ -59,7 +59,7 @@ This is a system specific command, check [mongodb docs](https://www.mongodb.com/
     sudo systemctl status mongod
 
 ## Bind IP 
-    sudo nano \etc\mongod.conf 
+    sudo nano /etc/mongod.conf 
 
 Edit the line with bind Id address 
 
