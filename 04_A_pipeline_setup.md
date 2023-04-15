@@ -127,3 +127,17 @@ For default `prism 2.0` installation path
   2) Replace `MainMenuCommon.xml` by [this one](resources/files/houdini/MainMenuCommon.xml)
    
     <br>
+
+
+---
+## Appendix
+
+### My Code standards : 
+
+When editing any pre-made code, I comply to these rules
+
+    Non destructive edits 
+    Try to understand the impact of your edits on the software
+    Try to see your edits from the big picture perspiective
+
+    Html like enclosed tag `<custom_edits>` `</custom_edits>`  is used to denote the start and end of custom edits
