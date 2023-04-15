@@ -86,5 +86,58 @@ Connect `prism 2.0` to `kitsu` :
 > As `openpype` will sync with all projects that complies to its naming convention <br>
 > And `prism 2.0` can sync with the rest <br>
 
+<br>
 
 ---
+
+## De-activate prism initiation on start up
+
+This step is recommended to avoid conflicts when `openpype` launches any DCC 
+
+### In Maya
+I use windows. These edits should be similar for other operating systems. 
+
+- Edit userSetup.py 
+    
+    1) Go to `Documents\maya\MAYA_VERSION\scripts` 
+    2) Replace `userSetup.py` by [this one](resources/files/maya/userSetup.py) 
+   
+    <br>
+
+- Edit Prism Shelf
+
+    1) Go to `Documents\maya\MAYA_VERSION\prefs\shelves`
+    2) Replace `shelf_Prism.mel` by [this one](resources/files/maya/shelf_Prism.mel)
+
+    <br>
+    
+### In Houdini
+For default `prism 2.0` installation path
+
+- Edit pythonrc.py 
+    
+    1) Go to `C:\ProgramData\Prism2\plugins\Houdini\Integration\pythonx.xlibs` , you'll find three pythonlibs folders 
+    2) Replace `pythonrc.py` in each folder by [this one](resources/files/houdini/pythonrc.py)
+
+    <br>
+
+- Edit Prism Menu
+  
+  1) Go to `C:\ProgramData\Prism2\plugins\Houdini\Integration`
+  2) Replace `MainMenuCommon.xml` by [this one](resources/files/houdini/MainMenuCommon.xml)
+   
+    <br>
+
+
+---
+## Appendix
+
+### My Code standards : 
+
+When editing any pre-made code, I comply to these rules
+
+    Non destructive edits 
+    Try to understand the impact of your edits on the software
+    Try to see your edits from the big picture perspiective
+
+    Html like enclosed tag `<custom_edits>` `</custom_edits>`  is used to denote the start and end of custom edits
