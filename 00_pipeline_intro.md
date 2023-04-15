@@ -39,13 +39,15 @@ e.g. save scene files , import assets , export assets
 
 ---
 ## Plan :
+- Building the **"Software Engineer" Mindset**
+     >How to think, solve problems as well as building outstanding technical skills
 - Learn DCC apps APIs
      > How to use code to interact with DCC apps
 - Virtual Machines : <br>
      > To mimic the basic structure of a studio's network. <br>
 
 - Production Tools Vs Pipeline Tools :
-     > Setup Kitsu, AYON and PRISM2.0  <br>
+     > Setup Kitsu, AYON(formerly OpenPype)  and PRISM 2.0  <br>
        
 - USD Workflow and Mateial X 
   

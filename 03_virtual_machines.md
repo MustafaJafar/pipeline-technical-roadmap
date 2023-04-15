@@ -69,11 +69,11 @@ and  download : <br>
 
 ### VMs Networking : 
 Two main categories for my usage <br>
-1) Bridge Adapter <br>
+1) **Bridge Adapter** <br>
    Allow VM to connect to your home network, your router will assign it an IP Address <br>
    You can use that IP to access VM from remote desktop app<br>
    
-2) Nat (Network)<br>
+2) **Nat (Network)**<br>
    Allow VMs to connect to a virtual networ. <br>
    You can add a virtual network from VBox preferences.<br>
    You may need to allow remote connections.<br>
@@ -97,10 +97,8 @@ Two options :
 
 ## My Daily Usage :
 ### Steps : 
-   - Create a **virtual network** from **VBox** preferences 
-   - Assign this network in VM settings : **NAT Network**
-   - Share from Vbox>devices>Shared Folders  : Config Folder, Assets Folder
-   - Share from guest as you share on windows : Working Files , Assets Folder <br>
+   - Assign this network in VM settings : **Bridge Adapter**
+   - Share from VM : Working Files , Assets Folder <br>
    [File sharing over a network in windows](https://support.microsoft.com/en-us/windows/file-sharing-over-a-network-in-windows-b58704b2-f53a-4b82-7bc1-80f9994725bf)
    - You may want to move **VM** to a another location [see how](https://www.youtube.com/watch?v=XB5P-K0yCEU)
 
@@ -109,8 +107,8 @@ Two options :
 ### Key Notes :  
    - Each Machine will be assigned an **IP address**
    - You can set a **static IP** for a certain Machine
-   - You can host a server *e.g. HTTP Server* on **Guest Machines** which will be accessible for all machines on the same network
-   - You can share folders from **Host Machine** as well as **Guest Machines**
+   - You can host a server *e.g. HTTP Server* on **Virtual Machine** which will be accessible for all machines on the same network
+   - You can share folders from **Host Machine** as well as **Virtual Machines**
    - Each Machine will have an internet access through this Virtual Network
    - Shared Folder from **Host** : `\\vboxsvr\shared-folder`
    - Shared folder from **Guest** : `\\Machine-Name\shared-folder`
@@ -118,15 +116,15 @@ Two options :
 
 <br>
 
-![Test LocalNet and Intert Access](resources\virtual_machines_01.jpg)*<center>Test LocalNet and Intert Access</center>*
+![Test LocalNet and Intert Access](resources/images/virtual_machines_01.jpg)*<center>Test network and Internet Access</center>*
 
 <br>
 
-![Shared Config Folder](resources\virtual_machines_02.jpg)*<center>Shared Config Folder</center>*
+![Shared Config Folder](resources/images/virtual_machines_02.jpg)*<center>Shared Config Folder</center>*
 
 <br>
 
-![Shared Folders over network](resources\virtual_machines_03.jpg)*<center>Shared Folders over network<br>for Guests, Change Machine Name</center>*
+![Shared Folders over network](resources/images/virtual_machines_03.jpg)*<center>Shared Folders over network</center>*
 
 <br>
 
@@ -154,11 +152,6 @@ By the end of these steps, you should be able to mimic the basic structure of a 
      In my scenario it's used for :
       - run studio production tool server *e.g. ftrack or kitsu*
       - run and store studio's database *e.g. Mongo DB for openpype*
-      - store and share studio configuration folder as `\\pipeline\configs`
-      - store and share studio repository [Tools, Scripts , HDAs, ... ] as `\\pipeline\repo` <br>
-       Example Tools :
-        - pipeline management tool 
-        - farm managment tool
    <br><br>
 
    3. Storage Machines : <br>
@@ -166,6 +159,11 @@ By the end of these steps, you should be able to mimic the basic structure of a 
       - 3d storage machine shares &emsp;&nbsp;`\\3d`
       - fx storage machine shares &emsp;&ensp; `\\fx`
       - comp storage machine shares  `\\comp`
+      - share studio configuration folder as `\\pipeline\configs`
+      - share studio repository [Tools, Scripts , HDAs, ... ] as `\\pipeline\repo` <br>
+       Example Tools :
+        - pipeline management tool 
+        - farm managment tool
    <br><br>
 
    4. User Machines :  <br>
@@ -195,38 +193,27 @@ Machines :
 
 ---
 ### My Setup:
-Due to my hardware limitation: <br>
-   &emsp; I use  <br>
-   &emsp;&emsp; ● 2 Pipeline Machine 1 at a time<br>
-   &emsp;&emsp; ● 1 Storage Machines <br>
-   &emsp;&emsp; ● 2 User Machine 1 at a time<br>
-   &emsp;&emsp; ● 1 Farm Machine *as well as limiting tasks complexity.* <br>
-   <br>
-   &emsp;Total available Resources : 8 Cores + 24 Ram + 800 GB available storage<br>
-   <br>
-   &emsp;My PC Specs : <br>
-   &emsp;&emsp;Processor : Ryzen 5900x 12 core <br>
-   &emsp;&emsp;Ram : 32 GB <br>
-   &emsp;&emsp;seperate Storage for VMs : samsung 980 pro 1T <br>
-   &emsp;&emsp;Graphics Card : Nvidia RTX 3060 <br>
-   <br>
-   &emsp;VM Machines Specs : <br>
-   &emsp;&emsp;3 GB ram for each core <br>
-   <br>
-   &emsp;&emsp;Pipeline Machine : <br>
-   &emsp;&emsp;&emsp;processor : 1 core <br>
-   &emsp;&emsp;&emsp;Ram : 2GB <br>
-   &emsp;&emsp;&emsp;Storage up to : 50 GB <br>
-   <br>
-   &emsp;&emsp;Storage Machine : <br>
-   &emsp;&emsp;&emsp;processor : 2 core <br>
-   &emsp;&emsp;&emsp;Ram : 2GB <br>
-   &emsp;&emsp;&emsp;Storage up to : 200 GB <br>
-   <br>
-   &emsp;&emsp;Each User / Farm Machine : <br>
-   &emsp;&emsp;&emsp;processor : 3 core <br>
-   &emsp;&emsp;&emsp;Ram : 6GB <br>
-   &emsp;&emsp;&emsp;Storage up to : 150 GB <br>
 
+   - 2 Virtual Pipeline Machine
+   - 1 Virtaul Storage Machine 
+
+   P.S. <br>
+   >VirtualBox has limited support for 3D graphics, some DCCs may work and some may not <br>
+   >So I use my host machine as a user / farm machine! <br>
+   
+
+   VM Machines Specs : 
+   - Pipeline Machine : 
+     - system : Ubuntu 22.04.2 
+     - processor : 1 core 
+     - Ram : 2GB 
+     - Storage up to : 50 GB 
+   - Storage Machine : 
+     - system : Windows 10 home
+     - processor : 2 core 
+     - Ram : 2GB 
+     - Storage up to : 200 GB 
+ 
+   
 
    
