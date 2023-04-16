@@ -4,12 +4,12 @@ Pipeline Technical : <br>
 In short he is the one who is responsible for making artists lives easier automating the daily routine processes as well as adding new or custom tools on demand. 
 
 Pipeline Director : <br> 
-the one who gives directions about how to do things and suggests new workflows.
+The one who gives directions about how to do things and suggests new workflows.
 
 ---
 
 ## Skills and Responsibilities
-In My opinion these points make a successfull pipeline technical
+In My opinion these points make a successfull **Pipeline Technical**
 1. Engineering Mindset [Fundamentals - Technical Skills] <br>
 2. Engineering Practices and Principles [ Establish Goals - Create a Motivational Environment - Plan and Execute - ... ] <br>
 3. DevOps [Dev / TDs Team Management - Repo Management - Dev Process Management ] <br>
@@ -19,6 +19,26 @@ In My opinion these points make a successfull pipeline technical
 
      pipeline tools save a lot of headaches on artists as they won't need to remember a lot of logical steps 
      that don't relate to their art creation process.
+
+### Glossary
+
+- Dev Team : `Dev`elopment `Team` 
+     >People who are responsible for writing scripts and creating new tools
+     
+- TD : `T`echnical `D`irector 
+     >A Technical Director is a bridge between an artist and a developer.<br>[read more](https://www.alexanderrichtertd.com/post/the-role-of-a-technical-director)
+
+- DevOps : `Dev`elopment `Op`eration`s`
+     >DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity.<br> [read more](https://aws.amazon.com/devops/what-is-devops/)
+
+- DCC : `D`igital `C`ontent `C`reation 
+     
+     >A DCC app is any app that we use to create a digital art / content *e.g. 3d models, 2d illustrations*
+
+- API : `A`pplication `P`rogramming `I`nterface 
+     
+     >An API is a set of definitions and protocols to build and integrate application software. <br>
+     >In other words, it defines how to interact with a certain program via coding. 
 
 ---
 
