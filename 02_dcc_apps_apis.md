@@ -1,6 +1,6 @@
 # DCC apps and APIs
 
-Any app that we use to create a digital art / content `e.g. 3d models`  is called a Digital Content Creation app `DCC app`
+Any app that we use to create a digital art / content *e.g. 3d models, 2d illustrations*  is called a Digital Content Creation app `DCC app`
 
 ---
 ## Use DCCs as an Artist
@@ -40,7 +40,8 @@ More Details:
 
 Artists can interact with programs using **UI** "User Interface"
 
-Developers can interact with programs using **API** "Application Programming Interface" which defines how to interact with a certain program via coding. 
+Developers can interact with programs using **API** "Application Programming Interface" which is a set of definitions and protocols to build and integrate application software.
+In other words, it defines how to interact with a certain program via coding. 
 
 Example:<br>
 You can write a python code that interacts with Maya via Maya API. <br>
