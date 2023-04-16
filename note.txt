@@ -1,9 +1,0 @@
-
-### Regarding Creating Custom paths/Project hierarchy on top of a pipeline management tool : 
-          if you choose assets names and export names carfully, you won't need to create custom paths.
-          you will be able to rely on the pipeline management tool.
-          you won't need to make any custom database that maps asset names to their exported data.
-          
-          As Richard Frangenberg mentioned : 
-          If Prism is using an actual database or checks the folder structure shouldn't make a difference for the code in your plugin.
-          Implementing the optional use of a database is on the roadmap, but mostly for performance improvements.
