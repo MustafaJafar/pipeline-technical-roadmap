@@ -194,8 +194,8 @@ Machines :
 ---
 ### My Setup:
 
-   - 2 Virtual Pipeline Machine
-   - 1 Virtaul Storage Machine 
+   - 2 Virtual Pipeline Machines
+   - 1 Virtual Storage Machine 
 
    P.S. <br>
    >VirtualBox has limited support for 3D graphics, some DCCs may work and some may not <br>
