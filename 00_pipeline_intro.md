@@ -24,12 +24,15 @@ In My opinion these points make a successfull **Pipeline Technical**
 
 - Dev Team : `Dev`elopment `Team` 
      >People who are responsible for writing scripts and creating new tools
-     
+
 - TD : `T`echnical `D`irector 
-     >A Technical Director is a bridge between an artist and a developer.<br>[read more](https://www.alexanderrichtertd.com/post/the-role-of-a-technical-director)
+     >A Technical Director is a bridge between an artist and a developer, [read more](https://www.alexanderrichtertd.com/post/the-role-of-a-technical-director).
+
+- Repository : (`repo` for short) 
+     >`Repo` is a centralized digital storage that developers use to make and manage changes to an application’s source code, [read more](https://aws.amazon.com/what-is/repo/).
 
 - DevOps : `Dev`elopment `Op`eration`s`
-     >DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity.<br> [read more](https://aws.amazon.com/devops/what-is-devops/)
+     >DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity, [read more](https://aws.amazon.com/devops/what-is-devops/).
 
 - DCC : `D`igital `C`ontent `C`reation 
      
