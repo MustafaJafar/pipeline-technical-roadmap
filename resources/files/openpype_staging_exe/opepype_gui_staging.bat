@@ -1,0 +1,1 @@
+start openpype_gui.exe --use-staging 
