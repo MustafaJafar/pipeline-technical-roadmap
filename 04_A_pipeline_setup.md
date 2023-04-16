@@ -37,25 +37,40 @@ My setup : <br>
 
 ---
 
-## OpenPype Installation : 
-Firstly, Install **MongoDB Server**, I choose to install it on `pipline-pype` machine <br>
+## Install OpenPype dependencies : 
+
+You only need to setup **MongoDB Server**, I chose to install it on `pipline-pype` machine, 
 [Install MongoDB 6 Community guide](resources/guides/mongodb-ubuntu.md)
 
 
-For user Machines : <br>
+## OpenPype Basic Setup:
+
+### Install OpenPype
+
 - Download win installer from the latset release [OpenPype releases](https://github.com/ynput/OpenPype/releases)
-- Add Monogo URL in OpenPype settings 
+- Installer will ask you for **Monogo URL** in OpenPype settings 
+  
+- Connect `openpype` to `kitsu` : 
+  - Activate `kitsu` module in Admin Settings and add `kitsu`'s URL
+  - Note that `openpype` sync with all `kitsu` projects and assets that complies to `openpype` naming rules  
+
+    > This step is done once as it will be saved in `openpype`'s  database.
+    ><br>
+    >Naming convention:<br>
+    >&emsp;At this moment names of assets, tasks, subsets or representations can contain only letters, numbers and underscore.
 
 <br>
 
-Connect `openPype` to `kitsu` : 
-- Activate `kitsu` module in Admin Settings and add `kitsu`'s URL
-- Note that `openpype` sync with all `kitsu` projects and assets that complies to `openpype` naming rules  
+### Setup OpenPype CodeBase
+- In my setup I made this [structure](resources/files/openpype_codebase/README.md) 
+- Create new zip version as [pype-tools](resources/guides/pype-tools.md) to **Deployment folder**
+- Add **Deployment folder** to **OpenPype System settings**
+  
+ 
+![OpenPype Version Repository Windows](resources/images/A_pipeline_setup_01.jpg)
 
-> This step is done once as it will be saved in `openpype`'s  database.
 
->Naming convention:<br>
->At this moment names of assets, tasks, subsets or representations can contain only letters, numbers and underscore.
+
 ---
 
 ## Prism 2.0 Installation : 
