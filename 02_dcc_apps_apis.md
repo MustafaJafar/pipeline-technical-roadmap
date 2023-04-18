@@ -1,21 +1,25 @@
 # DCC apps and APIs
 
-Any app that we use to create a digital art / content *e.g. 3d models, 2d illustrations*  is called a Digital Content Creation app `DCC app`
+To build a good **Arsenal of skills**  one needs to :
+
+- Use DCCs as an Artist
+- Read About CGI
+- Use DCCs as a developer
 
 ---
 ## Use DCCs as an Artist
 
 This is important for two reasons: <br>
 
-- How code affects a DCC 
-- Understand the big picture of a typical VFX pipeline 
+- To learn how a DCC work
+- To understand the big picture of a typical VFX pipeline 
 
 You should learn the DCC first in order to be able to understand the effect of your code on it.
 >In other words, you need to learn how to use Maya before digging in and creating Maya Scripts and tools! 
 
 So, Give your self time to learn to use the DCC as an artist first<br><br>
 
-Also, I recommend making a project like this to understand the big picture of a typical VFX pipeline so that you can learn: 
+Also, I recommend making a full project to understand the big picture of a typical VFX pipeline so that you can learn: 
   - what is the role of each department 
   - what is the input and output of each DCC
   - how to use each DCC 
@@ -36,12 +40,35 @@ More Details:
 
 ---
 
-## Use DCCs as a developer
+## Read About CGI  :
 
-Artists can interact with programs using **UI** "User Interface"
+Theory teaches you the experience of others. Theoretical knowledge can give you a deeper understanding of a concept through seeing it in the context of understanding the why behind it, [read more](https://vesim.ves.ac.in/vesimblog/student-blog/185-theoretical-knowledge-vs-practical-application.html).
 
-Developers can interact with programs using **API** "Application Programming Interface" which is a set of definitions and protocols to build and integrate application software.
-In other words, it defines how to interact with a certain program via coding. 
+So, learning how to usa a DCC is important, however reading about CGI adds another dimension to your knowledge.
+
+ > Reading is Knowledge and Knowledge is Power
+
+To name a few resources : 
+- [CG Cinematography](https://chrisbrejon.com/) 
+  > I really like the quailty of this book! 
+- [RenderMan Learn](https://renderman.pixar.com/learn)
+  > In this website, you can find general cgi articles as well as Renderman specific articles. <br>
+  > Also, I admire that learning about renderman can teach you a lot about cgi. <br>
+  > Undoubtedly, It's my favorite render engine . <br>
+- [Cave Academy](https://caveacademy.com/)
+  > It has a lot of amazing articles as well as high end courses! 
+- [CG101 - Pluralsight](https://www.youtube.com/playlist?list=PLxVq-O_gWqkAMpVv85pTSab6uKGw6sQz5) 
+  > It's an example of CG fundamentals courses
+  
+  <br>
+
+---
+
+## Use DCCs as a developer :
+
+Artists can interact with programs using **GUI** "Graphical User Interface" in which a user interacts with graphical components such as icons, buttons, and menus with input devices *e.g. mouse, keyboard, graphic tablet*
+
+Developers can interact with programs using **API** "Application Programming Interface" which defines how to interact with a certain program via coding. 
 
 Example:<br>
 You can write a python code that interacts with Maya via Maya API. <br>
