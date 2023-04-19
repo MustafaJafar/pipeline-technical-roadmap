@@ -18,13 +18,15 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 ### Loading tools
 
 - Load 
-- Manage
+- Manage(Inventory)
+   > It's used to update and change subsets loaded with Loader, [read more](https://openpype.io/docs/artist_tools_inventory)
 - Library
+   > It is extended loader which allows to load published subsets from Library projects.
 
 ## In this guide : How to Publish and load
 
 - model 
-- material
+- look (a material)
 - rig
 - animation
 - assembly 
@@ -32,7 +34,7 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 - mayascene
 - review
 
-### Publish Model Guide
+### Publish Model
 
 1) Preparation : 
    - Group your objects 
@@ -55,11 +57,11 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 2) Create family and set subset
    1) Select your group
    2) Go to **OpenPype → Create...**
-   3) Select **Model** and **Subset**     
+   3) Select **Model** and set **Subset**     
         ![Select **Model** and **Subset**](../images/pype-maya/pype-maya-01.jpg)
 3) Publish 
    1) Go **OpenPype → Publish....**
-   2) Set **status** and click **play button**
+   2) Set **status** and click **▶** button
    
         ![Select **Model** and **Subset**](../images/pype-maya/pype-maya-02.jpg)
 
@@ -75,7 +77,37 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 
 https://user-images.githubusercontent.com/20871534/233054013-2eaacc25-b3d5-4b35-927e-0d4e5ed22324.mp4
 
-### Load Model Example
+### Load Model
+
+1) Go to **OpenPype → Load...**
+2) Select desired asset
+3) Select desired subset then **Right-Mouse-Click**
 
 https://user-images.githubusercontent.com/20871534/233054096-77f7b60a-0a5a-40a6-a7a4-bb51f2ca0921.mp4
 
+## Publish Look
+
+1) Preparation, No certain preparation needed. you work as usual.
+2) Create family and set subset
+   1) Select the model or group that you want to publish its material 
+   2) Go to **OpenPype → Create...**
+   3) Select **Look** and set **Subset**
+    
+3) Publish: **OpenPype → Publish...** and click **▶** 
+
+> Note :  <br>
+> If there are textures in your material, they will be convered to `tx` format and saved as your pusblished material. <br>
+> Original textures are only used in your working file!<br>
+> Openpype does so to eleminate any dependency between published assets and artist's working files.<br> 
+
+## Load Look
+
+1) Go to **OpenPype → Load...**
+2) Select desired asset
+3) Select desired subset then **Right-Mouse-Click**
+   
+![Load Material](../images/pype-maya/pype-maya-04.jpg)
+
+## Publish, Load and Assign Look Example
+
+Assign Look is an additional step to assign imported looks to imported models.
