@@ -60,8 +60,10 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 3) Publish 
    1) Go **OpenPype → Publish....**
    2) Set **status** and click **play button**
+   
         ![Select **Model** and **Subset**](../images/pype-maya/pype-maya-02.jpg)
-   4) Deal with errors and re-publish
+
+   3) Deal with errors and re-publish
         ```
          Left-Mouse-Click will show you more details
          Right-Mouse-Click will show you some actions 
@@ -71,5 +73,4 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 
 ### Publish Model Example
 
-![Publish Model from OpenPype](../images/pype-maya/pype-maya-04.mp4)
-
+[Publish Model from OpenPype](https://www.dropbox.com/s/4ulx35s2tstqfs0/pype-maya-04.mp4?dl=0)
