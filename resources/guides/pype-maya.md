@@ -108,6 +108,6 @@ https://user-images.githubusercontent.com/20871534/233054096-77f7b60a-0a5a-40a6-
    
 ![Load Material](../images/pype-maya/pype-maya-04.jpg)
 
-## Publish, Load and Assign Look Example
+## Load and Assign Look Example
 
 Assign Look is an additional step to assign imported looks to imported models.
