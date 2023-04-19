@@ -73,4 +73,8 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 
 ### Publish Model Example
 
-[Publish Model from OpenPype](https://www.dropbox.com/s/4ulx35s2tstqfs0/pype-maya-04.mp4?dl=0)
+
+
+https://user-images.githubusercontent.com/20871534/233051249-11a4967d-7e4c-48e0-b41a-733f5300b2c9.mp4
+
+
