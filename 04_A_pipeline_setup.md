@@ -36,20 +36,23 @@ My setup : <br>
 `pipline-prism` machine that runs `kitsu` for `prism 2.0` projects <br>
 
 ---
+## **OpenPype**
 
-## Install OpenPype dependencies : 
+### Install OpenPype dependencies : 
 
 You only need to setup **MongoDB Server**, I chose to install it on `pipline-pype` machine, 
 [Install MongoDB 6 Community guide](resources/guides/mongodb-ubuntu.md)
 
 
-## OpenPype Basic Setup:
-
-### Install OpenPype
+### Install OpenPype and Basic Setup
 
 - Download win installer from the latset release [OpenPype releases](https://github.com/ynput/OpenPype/releases)
 - Installer will ask you for **Monogo URL** in OpenPype settings 
-  
+ 
+- Configure DCCs' environment variables and executable paths (this affects all users)
+    > Admin → Studio Settings → Applications <br>
+    > Each DCC app has its own user specified environment variables 
+
 - Connect `openpype` to `kitsu` : 
   - Activate `kitsu` module in Admin Settings and add `kitsu`'s URL
   - Note that `openpype` sync with all `kitsu` projects and assets that complies to `openpype` naming rules  
@@ -91,30 +94,30 @@ But for now, You can create it using `.bat` file
 
 ---
 
-## Prism 2.0 Installation : 
+## **Prism 2.0**  : 
+### Prism 2.0 License
 Firstly, Get `prism 2.0` license <br>
 Email to: contact@prism-pipeline.com
 
-For user Machines : <br>
-Install as follows [Prism Getting Started](https://prism-pipeline.com/docs/latest/index/getting_started.html)
+### Install Prism 2.0 and Basic Setup
+ - Install as follows [Prism Getting Started](https://prism-pipeline.com/docs/latest/index/getting_started.html)
 
->P.S.<br>
->This beta version of Prism Pipeline 2.0 is intended for testing purposes only.<br>It is not recommended to use it for commercial projects, but possible on your own risk.
+    >P.S.<br>
+    >This beta version of Prism Pipeline 2.0 is intended for testing purposes only.<br>It is not recommended to use it for commercial projects, but possible on your own risk.
+   
+ - Configure DCC apps executable paths (per user machine)
+    > User Settings → DCC apps
+ - Configure Environment Variables (this will affect all DCC apps)
+    > User Settings → Environment
+
+ - Connect `Prism 2.0` to `Kitsu` : 
+    > Options → Project Management → Setup  <br>
+    > Note that `prism 2.0` syncs with the selected `kitsu` project <br>
+    > For more info: [Prism Kitsu](https://prism-pipeline.com/docs/latest/index/plugins/Kitsu.html)
 
 <br>
 
-Connect `Prism 2.0` to `Kitsu` : 
-
-- From
-
-        Options > Project Management > Setup 
-
-Connect `prism 2.0` to `kitsu` : 
-- Note that `prism 2.0` sync with the specified `kitsu` project
-
-&emsp;for more info: [Prism Kitsu setup](https://prism-pipeline.com/docs/latest/index/plugins/Kitsu.html)
-
-
+> Note : <br>
 > You can Use the same `kitsu` server with both `openpype` as well as `prism 2.0`  <br>
 > As `openpype` will sync with all projects that complies to its naming convention <br>
 > And `prism 2.0` can sync with the rest <br>
