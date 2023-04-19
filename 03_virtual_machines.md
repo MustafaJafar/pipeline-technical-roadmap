@@ -116,15 +116,15 @@ Two options :
 
 <br>
 
-![Test LocalNet and Intert Access](resources/images/virtual_machines_01.jpg)*<center>Test network and Internet Access</center>*
+![Test LocalNet and Intert Access](resources/images/virtual_machines/virtual_machines_01.jpg)*<center>Test network and Internet Access</center>*
 
 <br>
 
-![Shared Config Folder](resources/images/virtual_machines_02.jpg)*<center>Shared Config Folder</center>*
+![Shared Config Folder](resources/images/virtual_machines/virtual_machines_02.jpg)*<center>Shared Config Folder</center>*
 
 <br>
 
-![Shared Folders over network](resources/images/virtual_machines_03.jpg)*<center>Shared Folders over network</center>*
+![Shared Folders over network](resources/images/virtual_machines/virtual_machines_03.jpg)*<center>Shared Folders over network</center>*
 
 <br>
 

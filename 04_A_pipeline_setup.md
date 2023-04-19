@@ -67,7 +67,7 @@ You only need to setup **MongoDB Server**, I chose to install it on `pipline-pyp
 - Add **Deployment folder** to **OpenPype System settings**
   
  
-![OpenPype Version Repository Windows](resources/images/A_pipeline_setup_01.jpg)
+![OpenPype Version Repository Windows](resources/images/A_pipeline_setup/A_pipeline_setup_01.jpg)
 
 ### Staging vs. Production
 
@@ -75,7 +75,7 @@ Staging version is for testing experimental features without disrupting producti
 
 It's denoted by `orange color` and its version is next to save button.
 
-![OpenPype Staging Version](resources/images/A_pipeline_setup_02.jpg)
+![OpenPype Staging Version](resources/images/A_pipeline_setup/A_pipeline_setup_02.jpg)
 
 ### Create Staging Executable
 In future, it may be createad by build script.<br>
@@ -85,7 +85,7 @@ But for now, You can create it using `.bat` file
 2) Add [openpype_staging icon](resources\files\openpype_staging_exe\openpype_staging.ico) to `igniter` folder
 3) Create shotrcut for the **.bat** file and change its icon, as [here](https://www.oreilly.com/library/view/java-garage/0321246233/0321246233_ch34lev1sec3.html).
 
-![OpenPype Staging Executable](resources/images/A_pipeline_setup_03.jpg)
+![OpenPype Staging Executable](resources/images/A_pipeline_setup/A_pipeline_setup_03.jpg)
 
 <br>
 
