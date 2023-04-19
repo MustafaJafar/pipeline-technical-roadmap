@@ -36,8 +36,7 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 
 1) Preparation : 
    - Group your objects 
-   - Follow Naming Conventions
-  
+   - Follow Naming Conventions  
         ```
         Suffices must be:
             - mesh:
@@ -56,17 +55,21 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 2) Create family and set subset
    1) Select your group
    2) Go to **OpenPype → Create...**
-   3) Select **Model** and **Subset**
-        
-        ![Select **Model** and **Subset**](../images/pype-maya-01.jpg)
-
+   3) Select **Model** and **Subset**     
+        ![Select **Model** and **Subset**](../images/pype-maya/pype-maya-01.jpg)
 3) Publish 
    1) Go **OpenPype → Publish....**
    2) Set **status** and click **play button**
-    
-        ![Select **Model** and **Subset**](../images/pype-maya-02.jpg)
+        ![Select **Model** and **Subset**](../images/pype-maya/pype-maya-02.jpg)
+   4) Deal with errors and re-publish
+        ```
+         Left-Mouse-Click will show you more details
+         Right-Mouse-Click will show you some actions 
+         After fixing errors, you can Refresh Button then publish again
+        ```
+        ![Select **Model** and **Subset**](../images/pype-maya/pype-maya-03.jpg)
 
-   3) Deal with errors and re-publish
-
-   
 ### Publish Model Example
+
+![Publish Model from OpenPype](../images/pype-maya/pype-maya-04.mp4)
+
