@@ -73,8 +73,9 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
 
 ### Publish Model Example
 
+https://user-images.githubusercontent.com/20871534/233054013-2eaacc25-b3d5-4b35-927e-0d4e5ed22324.mp4
 
+### Load Model Example
 
-https://user-images.githubusercontent.com/20871534/233051249-11a4967d-7e4c-48e0-b41a-733f5300b2c9.mp4
-
+https://user-images.githubusercontent.com/20871534/233054096-77f7b60a-0a5a-40a6-a7a4-bb51f2ca0921.mp4
 
