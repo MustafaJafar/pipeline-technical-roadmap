@@ -271,3 +271,7 @@ How loaded animation hierarchy looks like
 ### Open Reviews
 you can copy review path as follows.
 ![Open Reviews](../images/pype-maya/pype-maya-16.jpg)
+
+
+https://user-images.githubusercontent.com/20871534/233355440-133ad462-935a-45e7-b0ec-18843602f9ae.mp4
+
