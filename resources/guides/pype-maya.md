@@ -141,13 +141,14 @@ https://user-images.githubusercontent.com/20871534/233063666-94b7c3da-fe68-422a-
 1) Go to **OpenPype → Load...**
 2) Select subset then **Right-Mouse-Click**
    
-![Load Material](../images/pype-maya/pype-maya-06.jpg)
+![Load Rig](../images/pype-maya/pype-maya-06.jpg)
 
 ### Publish Animation
 
 1) Animate as usual
 2) Publish: **OpenPype → Publish...** and click **▶** 
 
+>As **Roy Nieterau** mentions in **ynput discord server** :
 > For loaded animation rigs there's no need to manually create a publish instance. <br>
 > It's automatically assumed it's loaded to have outputs produced for it.
 
@@ -156,31 +157,117 @@ https://user-images.githubusercontent.com/20871534/233063666-94b7c3da-fe68-422a-
 1) Go to **OpenPype → Load...**
 2) Select subset then **Right-Mouse-Click**
    
-![Load Material](../images/pype-maya/pype-maya-07.jpg)
+![Load Animation](../images/pype-maya/pype-maya-07.jpg)
 
 How loaded animation hierarchy looks like
-![Load Material](../images/pype-maya/pype-maya-08.jpg)
+![Animation hierarchy](../images/pype-maya/pype-maya-08.jpg)
 
 
 ### Publish Assembly
+
+1) Preparation: No Certain Preparation, you are free to group your objects or not 
+   
+2) Create family and set subset
+   1) Select models or group that you want to publish its material 
+   2) Go to **OpenPype → Create...**
+   3) Select **Assembly** and set **Subset**
+    
+3) Publish: **OpenPype → Publish...** and click **▶**
+
+![Publish Assembly](../images/pype-maya/pype-maya-09.jpg)
+
 ### Load Assembly
+> Loading Assembly is not working at the current time. April 20, 2023 
+
+![Load Assembly](../images/pype-maya/pype-maya-10.jpg)
 
 
-### Publish Layout
-### Load Layout
+### Publish  Set dress / Layout
 
+1) Preparation: No Certain Preparation, you are free to group your objects or not 
+   
+2) Create family and set subset
+   1) Select models or group that you want to publish its material 
+   2) Go to **OpenPype → Create...**
+   3) Select **Layout** or **Set Dress** and set **Subset**
+    
+3) Publish: **OpenPype → Publish...** and click **▶**
 
-### Publish Point Cache
-### Load Point Cache
+![Load Set dress / Layout](../images/pype-maya/pype-maya-11.jpg)
 
+> set dress vs layout <br>
+> Currently set dress and layout are functionally identical
+   
+### Load  Set dress / Layout
+1) Go to **OpenPype → Load...**
+2) Select subset then **Right-Mouse-Click**
+
+![Load Set dress / Layout](../images/pype-maya/pype-maya-12.jpg)
 
 ### Publish Maya Scene
-### Load Maya Scene
 
+> As **Toke Stuart** mentions in **ynput discord server** : <br> Maya scenes are just raw exports of the objectsets, so little to no validations. Meaning you can do anything within this family but that is also the danger.
+
+1) Preparation: No Certain Preparation, you are free to group your objects or not 
+   
+2) Create family and set subset
+   1) Select models or group that you want to publish its material 
+   2) Go to **OpenPype → Create...**
+   3) Select **Maya Scene** and set **Subset**
+    
+3) Publish: **OpenPype → Publish...** and click **▶**
+   
+
+![Load Set Maya Scene](../images/pype-maya/pype-maya-13.jpg)
+
+### Load Maya Scene
+1) Go to **OpenPype → Load...**
+2) Select subset then **Right-Mouse-Click**
+
+![Load Set Maya Scene](../images/pype-maya/pype-maya-14.jpg)
+
+### Publish Point Cache
+1) Preparation: No Certain Preparation, you are free to group your objects or not 
+   
+2) Create family and set subset
+   1) Select models or group that you want to publish its material 
+   2) Go to **OpenPype → Create...**
+   3) Select **Maya Scene** and set **Subset**
+    
+3) Publish: **OpenPype → Publish...** and click **▶**
+
+
+### Load Point Cache
+1) Go to **OpenPype → Load...**
+2) Select subset then **Right-Mouse-Click**
 
 ### Publish Camera
+1) Preparation: No Certain Preparation.
+   
+2) Create family and set subset
+   1) Select your camera
+   2) Go to **OpenPype → Create...**
+   3) Select **Camera** and set **Subset**
+    
+3) Publish: **OpenPype → Publish...** and click **▶**
+   
 ### Load Camera
-
+1) Go to **OpenPype → Load...**
+2) Select subset then **Right-Mouse-Click**
 
 ### Publish Reviews
+1) Preparation: No Certain Preparation.
+   
+2) Create family and set subset
+   1) Select your camera
+   2) Go to **OpenPype → Create...**
+   3) Select **Review** and set **Subset**
+    
+3) Publish: **OpenPype → Publish...** and click **▶**
+
+
+![Publish Point Cache, Camera, Review](../images/pype-maya/pype-maya-15.jpg)*<center>Publish Point Cache, Camera & Review</center>*
+
 ### Open Reviews
+you can copy review path as follows.
+![Open Reviews](../images/pype-maya/pype-maya-17.jpg)
