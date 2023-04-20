@@ -107,7 +107,8 @@ You don't have to load look manually.
 
 Using **look assigner** which loads and assigns look automatically.
 
-https://user-images.githubusercontent.com/20871534/233063666-94b7c3da-fe68-422a-a903-115483d657f3.mp4
+https://user-images.githubusercontent.com/20871534/233472262-ec78d995-d2cc-481d-8e3f-170ce27510dc.mp4
+
 
 > Model Credits : [Old Sofa](https://sketchfab.com/3d-models/old-sofa-3fe7ed15c42e48b8820792e8cef64f93)
 
