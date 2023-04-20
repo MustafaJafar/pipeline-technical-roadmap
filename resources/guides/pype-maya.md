@@ -270,4 +270,4 @@ How loaded animation hierarchy looks like
 
 ### Open Reviews
 you can copy review path as follows.
-![Open Reviews](../images/pype-maya/pype-maya-17.jpg)
+![Open Reviews](../images/pype-maya/pype-maya-16.jpg)
