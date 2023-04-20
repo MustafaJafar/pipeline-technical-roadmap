@@ -50,7 +50,6 @@ This file is a quick summary of [Openpype Maya](https://openpype.io/docs/artist_
             - nurbsSurface: _NRB
             - locator: _LOC
             - null/group: _GRP
-            - animation contreller : _CTR
         Suffices can also be overridden by project settings.
         ```
 
@@ -116,7 +115,7 @@ https://user-images.githubusercontent.com/20871534/233472262-ec78d995-d2cc-481d-
 
 1) Preparation:
    1) Rig Model as usual *Note: you should hide root joint*
-   2) Add Controls as usual *Note: Use **_CTR** suffix*
+   2) Add Controls as usual *Note: You don't have to add **_CTR** suffix*
    3) Prepare hierarchy as follows :
       
          ```
