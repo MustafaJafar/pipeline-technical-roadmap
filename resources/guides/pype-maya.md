@@ -86,7 +86,7 @@ https://user-images.githubusercontent.com/20871534/233054096-77f7b60a-0a5a-40a6-
 
 ### Publish Look
 
-1) Preparation, No certain preparation needed. you work as usual.
+1) Preparation: start with using a published model.
 2) Create family and set subset
    1) Select the model or group that you want to publish its material 
    2) Go to **OpenPype → Create...**
@@ -101,14 +101,11 @@ https://user-images.githubusercontent.com/20871534/233054096-77f7b60a-0a5a-40a6-
 
 ### Load Look
 
-1) Go to **OpenPype → Load...**
-2) Select subset then **Right-Mouse-Click**
-   
-![Load Material](../images/pype-maya/pype-maya-04.jpg)
+You don't have to load look manually. 
 
-### Load and Assign Look Example
+### Assign Look
 
-Assign Look is an additional step to assign imported looks to imported models.
+Using **look assigner** which loads and assigns look automatically.
 
 https://user-images.githubusercontent.com/20871534/233063666-94b7c3da-fe68-422a-a903-115483d657f3.mp4
 

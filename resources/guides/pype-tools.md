@@ -18,22 +18,28 @@ My routine before running any tools :
 2) Run `cd openpype_local_repo_path`
 3) Run `Set-ExecutionPolicy -ExecutionPolicy unrestricted`
 
-### Run from source 
+4) [Needed Once] Run `.\tools\create_env.ps1` 
+5) [Needed Once]  Run `.\tools\fetch_thirdparty_libs.ps1`
+   
+> P.S. <br>
+> As **Roy Nieterau** mentions in **ynput discord server** :<br> You don't need to run create env and fetch third party libs EACH TIME you run tray or building pype. It's just when the environment and libs have changed for OpenPype itself which is usually every minor version increment major.minor.patch.
 
-1) Run `.\tools\create_env.ps1`
-2) Run `.\tools\fetch_thirdparty_libs.ps1`
-3) Run `.\tools\run_tray.ps1`
+### To Run Openpype from source 
 
-### Build OpenPype
-1) Run `.\tools\create_env.ps1` 
-2) Run `.\tools\fetch_thirdparty_libs.ps1`
-3) Run `.\tools\build.ps1` 
-4) [Optional] Run `.\tools\build_win_installer.ps1`
+- Run `.\tools\run_tray.ps1`
+
+### To Build OpenPype
+
+1) Run `.\tools\build.ps1` 
+2) [Optional] Run `.\tools\build_win_installer.ps1`
+
+> P.S. <br> `build_win_installer` is for windows installer creation only. Not needed elsewhere.
 
 ### Create ZIP 
-1) Run `.\tools\create_env.ps1` 
-2) Run `.\tools\create_zip.ps1 --path "OpenPype_CodeBase_Path\deployment"` 
 
+- Run `.\tools\create_zip.ps1 --path "OpenPype_CodeBase_Path\deployment"` 
+> Creating ZIP doesn't require to `fetch_thirdparty_libs` <br>
+> Creating ZIP doesn't require to `build` Pype
 
 ---
 
@@ -52,8 +58,7 @@ I faced these errors and these solutions worked for me.
    
         fatal: not a git repository (or any of the parent directories): .git
 
-    [Solution 1 ✅] Run `git init` <br>
-    [Solution 2 ✅] Clone repo with git instead of copying and pasting
+    [Solution ✅] Clone repo with git instead of copying and pasting
         
         git clone --recurse-submodules https://github.com/pypeclub/OpenPype.git
 
@@ -67,8 +72,9 @@ I faced these errors and these solutions worked for me.
 
 <br>
 
-4) Cannot find Inno 
-    
+4) Cannot find Inno <br>
+    This is windows specific.
+   
         !!! Cannot find Inno Setup command
         !!! You can download it at https://jrsoftware.org/
 
