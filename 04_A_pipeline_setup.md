@@ -51,7 +51,7 @@ You only need to setup **MongoDB Server**, I chose to install it on `pipline-pyp
  
 - Configure DCCs' environment variables and executable paths (this affects all users)
     > Admin → Studio Settings → Applications <br>
-    > Each DCC app has its own user specified environment variables 
+    > Each DCC app has its own user specified environment variables, [read more](https://openpype.io/docs/admin_settings_system#applications).
 
 - Connect `openpype` to `kitsu` : 
   - Activate `kitsu` module in Admin Settings and add `kitsu`'s URL
