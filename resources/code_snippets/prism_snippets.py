@@ -1,14 +1,17 @@
+import os 
+
 core = pcore 
 
 
 
 # Base Directories 
 core.prismRoot
+core.prismLibs
 core.projectPath
 core.getPrismDataDir()
 core.getUserPrefDir()
 
-
+ffmpegPath = os.path.join(core.prismLibs, "Tools", "FFmpeg", "bin", "ffmpeg.exe"  )
 
 # Get current asset data 
 fn = core.getCurrentFileName()
