@@ -9,7 +9,7 @@ how to add your custom code
 - [Prism Code snippets](resources/code_snippets/prism_snippets.py). 
 
 ### Custom Modules / Plugins
-In prism you can do 2 main things: 
+In prism you can do 3 main things: 
 1) Add a Custom python module <br>
     by copying it to: 
     - Project `{project_path}/00_Pipeline/CustomModules/Python`
@@ -26,6 +26,8 @@ In prism you can do 2 main things:
       - `{user_documents}/prism2/plugins`
       - `{project_path}/00_Pipeline/Plugins/Apps` 
 
+3) Add some actions on certain events **i.e. Prism Hooks**
+    - Hooks can be found at `{project_path}/00_Pipeline/Hooks`
 
 <br>
 
