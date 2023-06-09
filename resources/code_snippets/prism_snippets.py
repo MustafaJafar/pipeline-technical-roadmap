@@ -1,7 +1,13 @@
 import os 
 
-core = pcore 
+# Access prism python API 
+import PrismInit
+core = PrismInit.pcore
 
+# Example on using prism python API
+# you can access it from within your own custom tools. It doesn't need to be a Prism plugin or hook.
+sequences, shots = core.entities.getShots()
+core.popup("Number of shots in current project: {}".format(len(shots)))
 
 
 # Base Directories 
@@ -27,19 +33,23 @@ username = core.username.title()
 # Get plugin name
 App = core.appPlugin.pluginName
 
+# Access Statmanger 
+sm = core.getStateManager()
+importStates = [state for state in sm.states if state.ui.className == "ImportFile"]
+for state in importStates : 
+    print( sm.getFilePaths(state))
 
-
-# Automated Import in StateManager 
-prismImport = core.stateManager().tw_import
+# Automated Import in StateManager, this works in prism 1.0 
+prismImport = sm.tw_import
 item_path = "" 
-existed_import_items = [prismImport.topLevelItem(i).ui.e_file.text() for i in range(prismImport.topLevelItemCount())]
+existed_import_items = [prismImport.topLevelItem(i).ui.e_file.text() for i in range(prismImport.topLevelItemCount())] 
 if (item_path not in existed_import_items) :
-    imported_item = core.stateManager().createState("ImportFile" , importPath = item_path)
+    imported_item = sm.createState("ImportFile" , importPath = item_path)
     # imported_item.ui.updateUi() # update ui after item was imported
 
 existed_tasks = [prismImport.topLevelItem(i).ui.taskName for i in range(prismImport.topLevelItemCount())]
 if ("_ShotCam" not in existed_tasks ):
-    core.stateManager().shotCam()
+    sm.shotCam()
 
 prismImport.topLevelItem(0).ui.updateUi() #get the first item and use it to update ui 
 
@@ -48,10 +58,10 @@ prismImport.topLevelItem(0).ui.updateUi() #get the first item and use it to upda
 # Automated Export in StateManager, example to craete playblast in maya
 item_name = "preview"
 execute_flag = True 
-prismExport = core.stateManager().tw_export
+prismExport = sm.tw_export
 existed_export_items = [prismExport.topLevelItem(i) for i in range(prismExport.topLevelItemCount()) if item_name in prismExport.topLevelItem(i).ui.l_taskName.text()]
 if (not existed_export_items):
-    item = core.stateManager().createState("Playblast")
+    item = sm.createState("Playblast")
     item.ui.l_taskName.setText(item_name)
 else : 
     item = existed_export_items[0]
@@ -59,20 +69,36 @@ else :
 item.ui.cb_rangeType.setCurrentIndex(0) # set frame range to "scene"
 item.ui.cb_formats.setCurrentIndex(2)   # set output fromat to ".mp4 (with audio)"
 if (execute_flag): 
-    item.ui.executeState(core.stateManager()) #cause warning if quicktime video is not installed.
+    item.ui.executeState(sm) #cause warning if quicktime video is not installed.
 
     playblast_path =  item.ui.l_pathLast.text() 
 
 
 
-# Tip for prism hooks 
+# Tips for prism hooks 
+# Access Core object in hooks
 def main (*args, **kwargs) :  
-    core = kwargs["core"] # to access core object inside hooks
+    core = kwargs["core"] 
     App = core.appPlugin.pluginName
     if App == "Maya" :
         core.popup("This is Maya!")
 
+# Add your checks in hooks which is easier than using the prePublish callback in a custom Prism plugin to run your checks.
+def myCheck(stateManager):
+    if stateManager.core.appPlugin.pluginName != "Maya":
+        return True
 
+    import maya.cmds as cmds
+    obj = cmds.ls("myRequiredObject")
+    return bool(obj)
+
+def main(*args, **kwargs):
+    print(args, kwargs)
+    stateManager = args[0]
+    if not myCheck(stateManager):
+        stateManager.core.popup("Checks not passed.")
+        return {"cancel": True}
+    
 
 # Get Assets list 
 assets = core.entities.getAssets()
