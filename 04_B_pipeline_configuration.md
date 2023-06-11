@@ -88,6 +88,11 @@ Prism :
   - is easier to operate and maintain 
   - you can create a library project that's folder is shared among remote collaborators via a third party tool (e.g. dropbox).
 
+Third party project sync : *It can be used with both openpype and prism*
+- Installing Sync Tool (e.g. gdrive, dropbox) and use it as a network mapped drive.
+- Production Managment (e.g. CGwire kitsu, shotgrid) Tool must be accessible from Internet.
+- For Openpype `mongodb server` must be accessible from Internet or cloud solution can be used. 
+
 ### For more Info
 
 You can check: 
