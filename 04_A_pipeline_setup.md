@@ -29,6 +29,11 @@ At this point I have :
 It needs someone who's familiar with linux. <br>
 [Deploy kitsu for production guide](resources/guides/kitsu-deploy.md)
 
+> OR
+>
+> You can use **EmberLightVFX**'s Docker [Kitsu for Docker](https://github.com/EmberLightVFX/Kitsu-for-Docker)  (ok for production)<br>
+> Then for OPenpype use [OpenPype Kitsu Sync for Docker](https://github.com/EmberLightVFX/OpenPype-Kitsu-Sync-for-Docker) that takes care of the Kitsu -> OP sync
+
 <br>
 
 My setup : <br>
