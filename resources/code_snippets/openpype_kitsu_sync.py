@@ -37,10 +37,20 @@ import os
 
 login = os.environ["KITSU_LOGIN"]
 password = os.environ["KITSU_PWD"]
-ignore_projects = [] 
 
-print(f"login: {login}\npassword: {password}\nignore_projects: {ignore_projects}\n")
+all_projects = get_all_projects_1() # you can use it to list all the projects in kitsu
+
+ignore_projects = []  # a list of projects you want to skip  
+filter_projects = () # a tuple of projects you want to sync 
+
+print(f"login: {login}\npassword: {password}\n")
+print(f"ignore_projects: {ignore_projects}\n")
+print(f"ignore_projects: {filter_projects}\n")
 
 #---Sync Projects-----
 from openpype.modules.kitsu.utils.update_op_with_zou import sync_all_projects
-sync_all_projects(login , password , ignore_projects)
+# this means sync all projects except ignore_projects 
+sync_all_projects(login , password , ignore_projects = ignore_projects  )
+
+# this means sync filter_projects only
+sync_all_projects(login , password , filter_projects = filter_projects )
