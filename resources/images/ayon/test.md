@@ -14,3 +14,7 @@ https://github.com/MustafaJafar/pipeline-technical-roadmap/assets/20871534/84ee6
 
 https://github.com/MustafaJafar/pipeline-technical-roadmap/assets/20871534/9fc48f49-f45c-402b-a64f-e4c68d703c33
 
+
+
+https://github.com/MustafaJafar/pipeline-technical-roadmap/assets/20871534/36682494-92bd-4a35-817b-e887ce71241f
+
